@@ -11,13 +11,13 @@ namespace Exercise03
         static void Main(string[] args)
         {
             var q = 5;
-            Console.WriteLine(q.IsPrime());
+            Console.WriteLine($"{q} is prime? " + q.IsPrime());
             q = 7;
-            Console.WriteLine(q.IsPrime());
+            Console.WriteLine($"{q} is prime? " + q.IsPrime());
             q = 9;
-            Console.WriteLine(q.IsPrime());
+            Console.WriteLine($"{q} is prime? " + q.IsPrime());
             q = 10;
-            Console.WriteLine(q.IsPrime());
+            Console.WriteLine($"{q} is prime? " + q.IsPrime());
             Console.ReadKey();
         }
     }
