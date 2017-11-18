@@ -8,21 +8,22 @@ namespace Exercise06
 {
     class Stack<T>
     {
-        public List<T> list { set; get; }
+        private List<T> list;
 
         public Stack()
         {
             list = new List<T>();
         }
 
-        public void Pop()
+        public bool Pop()
         {
-            try
+            if (list.Any())
             {
                 list.RemoveAt(list.Count - 1);
-            } catch (Exception e)
+                return true;
+            } else
             {
-                Console.WriteLine("Stack is empty");
+                return false;
             }
         }
 
@@ -36,9 +37,9 @@ namespace Exercise06
             list.Add(t);
         }
 
-        public bool Isempty()
+        public bool IsEmpty()
         {
-            return (list.Count == 0);
+            return !list.Any();
         }
     }
 }

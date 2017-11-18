@@ -10,23 +10,23 @@ namespace Exercise06
     {
         static void Main(string[] args)
         {
-            var st = new Stack<int>();
-            st.Add(1);
-            st.Add(2);
-            st.Add(3);
-            while (!st.Isempty())
+            var stack = new Stack<int>();
+            stack.Add(1);
+            stack.Add(2);
+            stack.Add(3);
+            while (!stack.IsEmpty())
             {
-                Console.WriteLine(st.Top());
-                st.Pop();
+                Console.WriteLine(stack.Top());
+                stack.Pop();
             }
-            var st2 = new Stack<string>();
-            st2.Add("a");
-            st2.Add("b");
-            st2.Add("c");
-            while (!st2.Isempty())
+            var stack2 = new Stack<string>();
+            stack2.Add("a");
+            stack2.Add("b");
+            stack2.Add("c");
+            while (!stack2.IsEmpty())
             {
-                Console.WriteLine(st2.Top());
-                st2.Pop();
+                Console.WriteLine(stack2.Top());
+                stack2.Pop();
             }
             Console.ReadKey();
         }
