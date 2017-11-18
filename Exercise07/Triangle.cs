@@ -12,11 +12,11 @@ namespace Exercise07
         public int B { set; get; }
         public int C { set; get; }
 
-        public Triangle(int A, int B, int C)
+        public Triangle(int a, int b, int c)
         {
-            this.A = A;
-            this.B = B;
-            this.C = C;
+            this.A = a;
+            this.B = b;
+            this.C = c;
         }
 
         public double GetPerimeter()
@@ -38,7 +38,7 @@ namespace Exercise07
 
         public override string ToString()
         {
-            return A + " " + B + " " + C;
+            return $"A: {A} B: {B} C: {C}";
         }
     }
 }
