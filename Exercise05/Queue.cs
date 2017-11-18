@@ -8,34 +8,28 @@ namespace Exercise05
 {
     class Queue<T>
     {
-        public List<T> list { set; get; }
+        private List<T> list;
 
         public Queue()
         {
             list = new List<T>();
         }
 
-        public void Pop()
+        public bool Pop()
         {
-            try
+            if (list.Any())
             {
                 list.RemoveAt(0);
-            } catch (Exception e)
+                return true;
+            } else
             {
-                Console.WriteLine("Queue is empty");
+                return false;
             }
         }
 
         public T Front()
         {
-            try
-            {
-                return list.First();
-            } catch (Exception e)
-            {
-                Console.WriteLine("Queue is empty");
-            }
-            return default(T);
+            return list.FirstOrDefault();
         }
 
         public void Add(T t)
@@ -43,9 +37,9 @@ namespace Exercise05
             list.Add(t);
         }
 
-        public bool Isempty()
+        public bool IsEmpty()
         {
-            return (list.Count == 0);
+            return !list.Any();
         }
     }
 }

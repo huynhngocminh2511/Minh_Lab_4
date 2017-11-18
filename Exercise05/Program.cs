@@ -10,23 +10,23 @@ namespace Exercise05
     {
         static void Main(string[] args)
         {
-            var qu = new Queue<int>();
-            qu.Add(1);
-            qu.Add(2);
-            qu.Add(3);
-            while (!qu.Isempty())
+            var queue = new Queue<int>();
+            queue.Add(1);
+            queue.Add(2);
+            queue.Add(3);
+            while (!queue.IsEmpty())
             {
-                Console.WriteLine(qu.Front());
-                qu.Pop();
+                Console.WriteLine(queue.Front());
+                queue.Pop();
             }
-            var qu2 = new Queue<string>();
-            qu2.Add("a");
-            qu2.Add("b");
-            qu2.Add("c");
-            while (!qu2.Isempty())
+            var queue2 = new Queue<string>();
+            queue2.Add("a");
+            queue2.Add("b");
+            queue2.Add("c");
+            while (!queue2.IsEmpty())
             {
-                Console.WriteLine(qu2.Front());
-                qu2.Pop();
+                Console.WriteLine(queue2.Front());
+                queue2.Pop();
             }
             Console.ReadKey();
         }
