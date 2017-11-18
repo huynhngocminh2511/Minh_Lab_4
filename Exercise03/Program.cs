@@ -22,11 +22,12 @@ namespace Exercise03
         }
     }
 
-    public static class StringExtension
+    public static class IntExtension
     {
         public static bool IsPrime(this int q)
         {
-            for (int i = 2; i <= (int)Math.Sqrt(q); i++)
+            var n = (int)Math.Sqrt(q);
+            for (int i = 2; i <= n; i++)
             {
                 if (q % i == 0) 
                 {
