@@ -8,7 +8,7 @@ namespace Exercise06
 {
     class Stack<T>
     {
-        private List<T> list;
+        private readonly List<T> list;
 
         public Stack()
         {
