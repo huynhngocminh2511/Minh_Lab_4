@@ -8,7 +8,7 @@ namespace Exercise05
 {
     class Queue<T>
     {
-        private List<T> list;
+        private readonly List<T> list;
 
         public Queue()
         {
